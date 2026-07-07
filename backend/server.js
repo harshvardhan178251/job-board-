@@ -36,8 +36,10 @@ router.get('/jobs', async (_req, res) => {
   if (jobs.length) return res.json({ jobs });
   const seedJobs = [
     { title: 'Senior Frontend Engineer', company: 'Northstar Labs', location: 'Remote', salary: '$140k-$180k', experience: '5+ years', remote: true, match: 94, stage: 'Review' },
-    { title: 'Product Designer', company: 'Astra Cloud', location: 'Austin, TX', salary: '$110k-$140k', experience: '3+ years', remote: false, match: 88, stage: 'Screening' },
-    { title: 'Data Analyst', company: 'Finora', location: 'New York, NY', salary: '$90k-$120k', experience: '2+ years', remote: true, match: 81, stage: 'Interview' }
+    { title: 'Product Designer', company: 'Astra Cloud', location: 'Austin, TX', salary: '$110k-$145k', experience: '3+ years', remote: false, match: 88, stage: 'Screening' },
+    { title: 'Data Analyst', company: 'Finora', location: 'New York, NY', salary: '$95k-$125k', experience: '2+ years', remote: true, match: 81, stage: 'Interview' },
+    { title: 'Senior Product Manager', company: 'Helio Finance', location: 'Chicago, IL', salary: '$150k-$190k', experience: '6+ years', remote: false, match: 91, stage: 'Review' },
+    { title: 'Machine Learning Engineer', company: 'Lumen AI', location: 'Remote', salary: '$130k-$170k', experience: '4+ years', remote: true, match: 87, stage: 'Screening' }
   ];
   return res.json({ jobs: seedJobs });
 });
